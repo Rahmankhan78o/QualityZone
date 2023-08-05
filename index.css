@@ -1,0 +1,166 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body {
+    /* Set a solid color as a fallback for older browsers */
+    background-color:  #0f0404;
+    /* Use the background-image property with the radial-gradient to create dots */
+    background-image: radial-gradient(red 6%, transparent 5%);
+    /* Adjust the size and position of the dots */
+    background-size: 20px 20px; /* This controls the distance between the dots */
+  }
+  
+  
+nav{
+    text-align: center;
+    box-shadow: 0cqh;
+    background-color: #0f0404;
+    color: white;
+    font-size: 25px;
+    padding: 14px 0 14px 0;
+    border-bottom:  4px solid orangered;
+    font-style: italic;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 60px;
+}
+strong{
+    color: red;
+}
+h3{
+    color: white;
+    text-align: center;
+    margin: 27px;
+    font-size: 32px;
+    font-family: monospace;
+    font-style: oblique;
+
+}
+button{
+    
+   position: relative;
+    
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   background-color: red;
+   left:30% ;
+   border-radius: 12px;
+   font-size: 40px;
+   padding: 15px;
+   font-weight: bold;
+   color: white;
+   margin-top: 40px;
+
+}
+p{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+img{
+    background: transparent;
+    width: 1500px;
+    height: 600px;
+    position: relative;
+    
+}
+h2{
+    color: white;
+    text-align: center;
+    font-size: 45px;
+}
+div{
+    color: white;
+}
+.container{
+    display: flex;
+   
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.card{
+    
+    background-color: rgb(88, 15, 15);
+    padding: 30px;
+   
+    font-size: 18px;
+    flex-basis: 16%;
+    font-weight: bold;
+    width: 250px;
+    height: 250px;
+    transition: transform .2s;
+    
+
+}
+.card:hover{
+    background-color: rgb(13, 2, 2);
+    border-bottom: 2px solid purple;
+    transform: scale(1.05)
+}
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin-top: 90px;
+    padding: 40px;
+}
+/* mobile responsive */
+
+@media only screen and (min-width: 200px) and (max-width: 800px) {
+    .nav{
+        width: 100%;
+        width: auto;
+    }
+    h1{
+        width: 100%;
+        font-size: 30px;
+        margin: auto;
+        margin-top: 30px;
+        margin-left: 50px;
+
+    } 
+    h3{
+        width: 100%;
+        font-size: 20px;
+    }
+    button{
+        font-size: 12px;
+    }
+    .container {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card{
+        margin: auto;
+        
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    
+   
+    p{
+           margin-left: 50px;
+    }
+    h2{
+        margin-left: 40px;
+        font-size: 30px;
+    }
+  }
+
+
+
+
